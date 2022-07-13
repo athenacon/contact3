@@ -1,0 +1,135 @@
+<!-- declaration that we use HTML 5  -->
+<!DOCTYPE html> 
+<!-- declaration that we ise English language in the Web page  -->
+<html lang="en">
+    <head>
+        <!-- title of the browser toolbar -->       
+        <title>Pedestrian app user evaluation</title>
+        <meta charset="utf-8">
+        <!-- ensure proper rendering and touch zooming -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="mystyle.css">
+        <!-- external CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+        </style>
+    </head>
+    <!-- page content -->
+    <body style="background-color: lightgrey">
+        <!-- create the navigation bar --> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button> 
+            <h6 class="intro">CYENS</h6>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="test_a.php">Take Test A</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="test_b.html">Take Test B</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="questionnaire.php">Complete the questionnaire</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-7" style="font-size:large">
+                    <div class="slider">
+
+                         <br>
+                        <img src="imagess/a.jpg"   class="slider-img" style="width:85%" >
+</div>
+
+                     
+                </div>
+                <div class="col" style="font-size:large">
+                    
+                    <form action=".php">
+                        <br><p>Please select the appropriate obstacle type:   </p>
+                         <b>Damage</b><br>
+                            <input type="radio" name="option_b" value="Crack"/> Crack<br>
+                            <input type="radio" name="option_b" value="Hole/Pot-hole" /> Hole/Pot-hole<br>
+                            <input type="radio" name="option_b" value="Paver (broken)"/> Paver (broken)<br>
+                            <br>
+                            <b>Layout</b><br>
+                            <input type="radio" name="option_b" value="Narrow pavement" /> Narrow pavement<br>
+                            <input type="radio" name="option_b" value="No pavement"/> No pavement<br>
+                            <br>
+                            <b>Street Furniture</b><br>
+                            <input type="radio" name="option_b" value="Bench" /> Bench<br>
+                            <input type="radio" name="option_b" value="Light"/> Light<br>
+                            <input type="radio" name="option_b" value="Bin" /> Bin<br>
+                            <input type="radio" name="option_b" value="Parking meter"/> Parking meter<br>
+                            <input type="radio" name="option_b" value="Plant pot" /> Plant pot<br>
+                            <br>
+                            <b>Street Decor</b><br>
+                            <input type="radio" name="option_b" value="Tree" /> Tree<br>
+                            <input type="radio" name="option_b" value="Shrub"/> Shrub<br>
+                            <input type="radio" name="option_b" value="Flower" /> Flower<br>
+                            <input type="radio" name="option_b" value="Parking prevention barrier"/> Parking prevention barrier<br>
+                            <input type="radio" name="option_b" value="Mail box" /> Mail box<br>
+                            <input type="radio" name="option_b" value="Public art - Statue"/> Public art - Statue<br>
+                            <br>
+                            <b>General Interest</b><br>
+                            <input type="radio" name="option_b" value="Bus stop"/> Bus stop<br>
+                            <input type="radio" name="option_b" value="Kiosk" /> Kiosk<br>
+                            <input type="radio" name="option_b" value="Play area"/> Play area<br>
+                            <br>
+                            
+                        
+                        
+                        </div>
+                            <div class="col" style="font-size:large">
+<br><br><br><br>
+
+<b>Vehicles</b><br>
+                            <input type="radio" name="option_b" value="4 wheel"/> 4 wheel<br>
+                            <input type="radio" name="option_b" value="2 wheel" /> 2 wheel<br> <br>
+                            <b>Infrastructure</b><br>
+                            <input type="radio" name="option_b" value="Scaffolding"/> Scaffolding<br>
+                            <input type="radio" name="option_b" value="Boulder" /> Boulder<br>
+                            <input type="radio" name="option_b" value="Safety sign"/> Safety sign<br>
+                            <input type="radio" name="option_b" value="Fence" /> Fence<br>
+                            <input type="radio" name="option_b" value="Traffic cone"/> Traffic cone<br>
+<br>
+                             <b>Other</b> <br>
+                            <input type="radio" name="option_b" value="Litter"/> Litter<br>
+                            <input type="radio" name="a" value="Chair" /> Chair<br>
+                            <input type="radio" name="a" value="Table" /> Table<br>
+                            <input type="radio" name="a" value="Advertisement sign"/> Advertisement sign<br>
+                            <input type="radio" name="a" value="Crowded pavement"/> Crowded pavement<br>
+                            
+                        </form>
+                        <br>
+                        <button id="btn"  style=" background-color: rgb(75, 65, 65); color:aliceblue;" onclick="next()">Next</button>
+
+<br>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="mt-5 p-4 bg-dark text-center">
+            <p style="color:white">You have reached the end! 
+        </div>
+        <script src="java.js"></script>
+    </body>
+</html>
